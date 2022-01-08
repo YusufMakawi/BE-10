@@ -9,7 +9,7 @@ function persiapan() {
 function rebusAir() {
     return new Promise(function(resolve, reject) {
         setTimeout(() => {
-            resolve("Rebus air ...");
+            resolve("Masak Mie ...");
         }, 7000);
     })
 }
@@ -26,7 +26,7 @@ function main() {
     persiapan()
         .then(function(result){
             console.log(result);
-            return rebusAir();
+            return masakMie();
         })
         .then(function(result){
             console.log(result);
