@@ -9,7 +9,7 @@ function persiapan() {
 function rebusAir() {
     return new Promise(function(resolve, reject) {
         setTimeout(() => {
-            resolve("Rebus air ...");
+            resolve("Masak mie ...");
         }, 7000);
     })
 }
@@ -26,8 +26,8 @@ function masak() {
     const hasilPersiapan = await persiapan();
     console.log(hasilPersiapan);
     
-    const hasilRebusAir = await rebusAir    ();
-    console.log(hasilRebusAir);
+    const hasilRebusAir = await masakMie    ();
+    console.log(hasilMasakMie);
     
     const hasilMasak = await masak();
     console.log(hasilMasak);
@@ -35,7 +35,7 @@ function masak() {
 
 async function main() {
     console.log(await persiapan());
-    console.log(await rebusAir());
+    console.log(await masakMie());
     console.log(await masak());
 }
 
